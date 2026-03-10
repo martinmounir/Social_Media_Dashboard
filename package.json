@@ -1,0 +1,32 @@
+{
+  "name": "fem-dklt-toggle",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "autoprefixer": "^10.4.27",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^7.1.2",
+    "dart-sass": "^1.25.0",
+    "gulp": "^5.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.5.6",
+    "sass": "^1.97.3"
+  }
+}

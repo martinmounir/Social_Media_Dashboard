@@ -101,3 +101,9 @@ Potential enhancements include:
 
 * Portfolio: https://martin-mounir.vercel.app/
 * GitHub: https://github.com/martinmounir
+## Author
+
+**Martin Mounir**
+
+* Portfolio: https://martin-mounir.vercel.app/
+* GitHub: https://github.com/martinmounir

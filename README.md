@@ -101,11 +101,3 @@ Potential enhancements include:
 
 * Portfolio: https://martin-mounir.vercel.app/
 * GitHub: https://github.com/martinmounir
-
-## Acknowledgments
-
-Challenge provided by Frontend Mentor, a platform that offers realistic frontend projects for developers looking to improve their practical coding skills.
-
----
-
-**Have fun building and keep learning! 🚀**

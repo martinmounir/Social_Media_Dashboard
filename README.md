@@ -1,6 +1,8 @@
-# Social Media Dashboard
+<h1 align="center">Social Media Dashboard</h1>
 
-![Social Media Dashboard Preview](preview.jpg)
+<p align="center">
+  <img src="preview.jpg" alt="Social Media Dashboard Preview" width="900">
+</p>
 
 ## Live Demo
 

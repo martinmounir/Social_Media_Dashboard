@@ -65,8 +65,11 @@ function imagesTask() {
   return src('images/**/*').pipe(dest('dist/images'))
 }
 
-// Build Gulp Task
-exports.build = series(htmlTask, scssTask, jsTask, imagesTask)
+function faviconTask() {
+  return src('favicon.png').pipe(dest('dist'))
+}
 
+// Build Gulp Task
+exports.build = series(htmlTask, faviconTask, imagesTask, scssTask, jsTask)
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask)

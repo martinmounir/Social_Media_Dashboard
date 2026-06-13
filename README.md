@@ -1,103 +1,152 @@
-# Frontend Mentor - Social Media Dashboard with Theme Switcher
+# Social Media Dashboard with Theme Switcher
 
-![Design preview for the Social Media Dashboard challenge](preview.jpg)
+![Social Media Dashboard Preview](preview.jpg)
+
+## Live Demo
+
+🚀 **Live Demo:** [View Project](https://social-media-dashboard-12.vercel.app/)
 
 ## Welcome! 👋
 
 Thank you for checking out this project.
 
-This challenge is part of Frontend Mentor's collection of real-world frontend projects designed to help developers strengthen their HTML, CSS, and JavaScript skills through practical application.
+This project is based on a Frontend Mentor challenge and focuses on building a responsive social media dashboard with a fully functional theme switcher using modern frontend development practices.
 
 ## The Challenge
 
-The goal of this project is to recreate a responsive social media dashboard based on the provided designs while implementing a fully functional theme switcher.
-
 Users should be able to:
 
-* View an optimized layout across different screen sizes
-* Interact with all UI elements through hover states
-* Switch seamlessly between light and dark themes
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements
+- Toggle between light and dark themes
 
 ## Project Overview
 
-This dashboard presents social media performance metrics in a clean and modern interface. The design emphasizes usability, accessibility, and responsive behavior while providing an engaging user experience.
+The Social Media Dashboard provides an overview of social media statistics through a clean and modern user interface. The application emphasizes responsive design, accessibility, and an engaging user experience.
 
-The project focuses on:
+## Preview
 
-* Responsive layouts
-* Theme management
-* Component-based styling
-* Modern CSS techniques
-* Interactive user interfaces
+The dashboard supports both light and dark themes:
 
-## Design Resources
+![Project Preview](preview.jpg)
 
-All design assets are provided within the project files:
+## Features
 
-* `/design` – Desktop and mobile design references
-* `/images` – Optimized project assets and icons
-* `style-guide.md` – Colors, typography, and design specifications
-
-The design files are provided as static JPG images, requiring careful attention to spacing, sizing, and visual consistency during implementation.
-
-## Development Approach
-
-The project was built using a structured workflow:
-
-1. Analyze the provided designs.
-2. Create semantic HTML markup.
-3. Establish base styles and typography.
-4. Build responsive layouts.
-5. Implement theme-switching functionality.
-6. Add interactive states and final refinements.
+- Fully responsive design
+- Light/Dark mode toggle
+- Interactive hover effects
+- Mobile-first workflow
+- Clean and maintainable code structure
+- Optimized assets and performance
+- Modern UI design
 
 ## Technologies Used
 
-* HTML5
-* CSS3 / Sass
-* JavaScript (ES6)
-* Gulp
-* BrowserSync
+- HTML5
+- Sass (SCSS)
+- JavaScript (ES6)
+- Gulp
+- BrowserSync
 
-## Key Features
+## Project Structure
 
-* Fully responsive design
-* Light/Dark mode toggle
-* Interactive hover effects
-* Mobile-first workflow
-* Clean and maintainable code structure
-* Optimized assets and performance
+```text
+├── app/
+│   ├── js/
+│   └── scss/
+├── design/
+├── images/
+├── dist/
+├── index.html
+├── gulpfile.js
+└── package.json
+```
+
+## Design Resources
+
+The project includes all design resources provided by Frontend Mentor:
+
+- `/design` — Desktop and mobile design references
+- `/images` — Icons and assets
+- `style-guide.md` — Typography, colors, and design guidelines
+
+## Development Process
+
+1. Analyzed the provided designs
+2. Created semantic HTML structure
+3. Built reusable Sass architecture
+4. Implemented responsive layouts
+5. Developed the theme switcher functionality
+6. Added interactive states and optimizations
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/martinmounir/Social_Media_Dashboard.git
+cd Social_Media_Dashboard
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
+npm start
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
 
 ## Deployment
 
-The project can be deployed using any static hosting platform, including:
+This project is deployed on Vercel:
 
-* GitHub Pages
-* Vercel
-* Netlify
+🚀 **Live Site:** https://social-media-dashboard-12.vercel.app/
 
 ## Learning Outcomes
 
-Through this challenge, I strengthened my understanding of:
+Through this project, I improved my understanding of:
 
-* Responsive web design
-* CSS Grid and Flexbox
-* Theme management with JavaScript
-* Sass architecture and workflow
-* Frontend development best practices
+- Responsive Web Design
+- CSS Grid & Flexbox
+- Theme Switching with JavaScript
+- Sass Architecture
+- Build Automation with Gulp
+- Frontend Best Practices
 
 ## Future Improvements
 
 Potential enhancements include:
 
-* Smooth theme transition animations
-* Improved accessibility support
-* Additional dashboard analytics
-* API-driven dynamic social media data
+- Smooth theme transition animations
+- Enhanced accessibility support
+- Dynamic social media data integration via APIs
+- Additional dashboard analytics
+- Further performance optimizations
 
 ## Author
 
 **Martin Mounir**
 
-* Portfolio: https://martin-mounir.vercel.app/
-* GitHub: https://github.com/martinmounir
+- Portfolio: [martin-mounir.vercel.app](https://martin-mounir.vercel.app/)
+- GitHub: [@martinmounir](https://github.com/martinmounir)
+- LinkedIn: [Martin Mounir](https://www.linkedin.com/in/martin-mounir/)
+
+## Acknowledgments
+
+Challenge provided by Frontend Mentor.
+
+- Frontend Mentor: https://www.frontendmentor.io/
+
+---
+
+⭐ If you found this project interesting, consider giving it a star on GitHub!

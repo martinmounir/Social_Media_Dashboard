@@ -24,12 +24,6 @@ Users should be able to:
 
 The Social Media Dashboard provides an overview of social media statistics through a clean and modern user interface. The application emphasizes responsive design, accessibility, and an engaging user experience.
 
-## Preview
-
-The dashboard supports both light and dark themes:
-
-![Project Preview](preview.jpg)
-
 ## Features
 
 - Fully responsive design
@@ -140,13 +134,3 @@ Potential enhancements include:
 - Portfolio: [martin-mounir.vercel.app](https://martin-mounir.vercel.app/)
 - GitHub: [@martinmounir](https://github.com/martinmounir)
 - LinkedIn: [Martin Mounir](https://www.linkedin.com/in/martin-mounir/)
-
-## Acknowledgments
-
-Challenge provided by Frontend Mentor.
-
-- Frontend Mentor: https://www.frontendmentor.io/
-
----
-
-⭐ If you found this project interesting, consider giving it a star on GitHub!

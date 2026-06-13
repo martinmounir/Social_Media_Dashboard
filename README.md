@@ -100,10 +100,6 @@ npm start
 npm run build
 ```
 
-## Deployment
-
-This project is deployed on Vercel:
-
 🚀 **Live Site:** https://social-media-dashboard-12.vercel.app/
 
 ## Learning Outcomes

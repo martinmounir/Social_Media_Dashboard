@@ -1,4 +1,4 @@
-# Social Media Dashboard with Theme Switcher
+# Social Media Dashboard
 
 ![Social Media Dashboard Preview](preview.jpg)
 

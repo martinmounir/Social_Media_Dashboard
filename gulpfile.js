@@ -61,10 +61,8 @@ function htmlTask() {
   return src('*.html').pipe(dest('dist'))
 }
 
+// Build Gulp Task
 exports.build = series(htmlTask, scssTask, jsTask)
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask)
-
-// Build Gulp Task
-exports.build = series(scssTask, jsTask)

@@ -1,64 +1,70 @@
 // Initialize modules
-const { src, dest, watch, series } = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
-const cssnano = require("cssnano");
-const babel = require("gulp-babel");
-const terser = require("gulp-terser");
-const browsersync = require("browser-sync").create();
+const { src, dest, watch, series } = require('gulp')
+const sass = require('gulp-sass')(require('sass'))
+const postcss = require('gulp-postcss')
+const autoprefixer = require('autoprefixer')
+const cssnano = require('cssnano')
+const babel = require('gulp-babel')
+const terser = require('gulp-terser')
+const browsersync = require('browser-sync').create()
 
 // Use dart-sass for @use
 //sass.compiler = require('dart-sass');
 
 // Sass Task
 function scssTask() {
-  return src("app/scss/style.scss", { sourcemaps: true })
-    .pipe(sass().on("error", sass.logError))
+  return src('app/scss/style.scss', { sourcemaps: true })
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(dest("dist", { sourcemaps: "." }));
+    .pipe(dest('dist', { sourcemaps: '.' }))
 }
 
 // JavaScript Task
 function jsTask() {
-  return src("app/js/script.js", { sourcemaps: true })
-    .pipe(babel({ presets: ["@babel/preset-env"] }))
+  return src('app/js/script.js', { sourcemaps: true })
+    .pipe(babel({ presets: ['@babel/preset-env'] }))
     .pipe(terser())
-    .pipe(dest("dist", { sourcemaps: "." }));
+    .pipe(dest('dist', { sourcemaps: '.' }))
 }
 
 // Browsersync
 function browserSyncServe(cb) {
   browsersync.init({
     server: {
-      baseDir: ".",
+      baseDir: '.',
     },
     notify: {
       styles: {
-        top: "auto",
-        bottom: "0",
+        top: 'auto',
+        bottom: '0',
       },
     },
-  });
-  cb();
+  })
+  cb()
 }
 function browserSyncReload(cb) {
-  browsersync.reload();
-  cb();
+  browsersync.reload()
+  cb()
 }
 
 // Watch Task
 function watchTask() {
-  watch("*.html", browserSyncReload);
+  watch('*.html', browserSyncReload)
   watch(
-    ["app/scss/**/*.scss", "app/**/*.js"],
+    ['app/scss/**/*.scss', 'app/**/*.js'],
     { ignoreInitial: false },
     series(scssTask, jsTask, browserSyncReload),
-  );
+  )
 }
 
+function htmlTask() {
+  return src('*.html').pipe(dest('dist'))
+}
+
+exports.build = series(htmlTask, scssTask, jsTask)
+
 // Default Gulp Task
-exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+exports.default = series(scssTask, jsTask, browserSyncServe, watchTask)
 
 // Build Gulp Task
-exports.build = series(scssTask, jsTask);
+exports.build = series(scssTask, jsTask)
